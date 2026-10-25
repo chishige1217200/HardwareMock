@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hardware Mock — PCハードウェア構成ビルダー</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🖥️ Hardware Mock <span>PCハードウェア構成ビルダー</span></h1>
+  <div class="toolbar">
+    <button id="btnRandom" title="整合性の取れたランダム構成を生成">🎲 ランダム構成</button>
+    <button id="btnSave" title="ブラウザに構成を保存">💾 保存</button>
+    <button id="btnLoad" title="保存済みの構成を読み込み">📂 読込</button>
+    <button id="btnReset" title="全スロットを空にする">🗑 リセット</button>
+  </div>
+</header>
+<main>
+  <section id="catalog">
+    <nav id="tabs"></nav>
+    <div id="partList"></div>
+  </section>
+
+  <section id="buildView">
+    <div id="caseView"></div>
+    <p class="hint">パーツカードをクリックで追加 ／ スロットをクリックで削除 ／ ドラッグ&amp;ドロップでも配置できます</p>
+  </section>
+
+  <aside id="summary">
+    <h2>構成一覧</h2>
+    <div id="buildList"></div>
+    <div id="totals"></div>
+    <h2>整合性チェック</h2>
+    <div id="checks"></div>
+  </aside>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
